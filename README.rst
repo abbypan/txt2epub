@@ -15,11 +15,14 @@ Dependency
 ----------
 
 * ``python``.
+* ``docutils``.
 * ``jinja2``: for rendering output from epub template. 
+
 
 Usage
 -----
-
+* Prepare docutils: ``pip install docutils``.
+* Prepare jinjia2: ``pip install jinjia2``.
 * Install: ``python setup.py install --user``. 
 * Execute: ``txt2epub --keep-line-breaks output.epub input.txt``
 
