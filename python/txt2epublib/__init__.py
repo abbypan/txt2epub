@@ -151,19 +151,19 @@ def main(destination, sources, **options):
 
     ## now we can write the content/00_content.opf
     template = env.get_template("00_content.opf")
-    out = file(tempdir + "/content/00_content.opf", "w")
+    out = open(tempdir + "/content/00_content.opf", "w")
     out.write(template.render(options))
     out.close()
 
     ## then content/00_toc.ncx
     template = env.get_template("00_toc.ncx")
-    out = file(tempdir + "/content/00_toc.ncx", "w")
+    out = open(tempdir + "/content/00_toc.ncx", "w")
     out.write(template.render(options))
     out.close()
 
     ## and the style
     template = env.get_template("00_stylesheet.css")
-    out = file(tempdir + "/content/00_stylesheet.css", "w")
+    out = open(tempdir + "/content/00_stylesheet.css", "w")
     out.write(template.render(options))
     out.close()
 
